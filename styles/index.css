@@ -1,0 +1,60 @@
+img#primary-logo {
+    max-width: 400px;
+    width: 30vw;
+}
+
+h1 {
+    color: var(--col-primary-dark)
+}
+
+hr {
+    width: 100%;
+    margin: 5% 0;
+}
+
+p.sub-title {
+    font-size: 1.4em;
+    line-height: 1.6em;
+    font-weight: var(--font-weight-regular);
+}
+
+fieldset.primary-form {
+    width: 50%;
+}
+
+fieldset > input {
+    margin: 5% 0;
+}
+
+fieldset > button {
+    margin: 2% 0;
+    width: 100%;
+}
+
+@keyframes flash {
+    0% {
+        border-bottom-color: var(--col-primary-mid);
+        opacity: 1;
+    }
+    15% {
+        border-bottom-color: var(--col-accent);
+        opacity: 0.5;
+    }
+    50% {
+        border-bottom-color: var(--col-accent);
+        opacity: 1;
+    }
+    85% {
+        border-bottom-color: var(--col-accent);
+        opacity: 0.5;
+    }
+    100% {
+        border-bottom-color: var(--col-primary-mid);
+        opacity: 1;
+    }
+}
+
+.copy-confirm {
+    animation-name: flash;
+    animation-duration: 1000ms;
+}

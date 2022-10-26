@@ -8,9 +8,28 @@
     <link rel="stylesheet" href="styles/default.css">
     <link rel="stylesheet" href="styles/index.css">
 
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="scripts/md5-min.js"></script>
     <script src="scripts/index.js"></script>
 </head>
 <body>
-
+<div id="content-wrapper">
+    <img src="resources/1x/project-logo.png" alt="Synergy project logo" id="primary-logo">
+    <h1>Synergy Password Generator</h1>
+    <hr>
+    <p class="sub-title">Your settings</p>
+    <fieldset class="primary-form">
+        <input type="text" name="Website" id="website" placeholder="Website" autocomplete="off">
+        <input type="password" name="Master key" id="master-key" placeholder="Master key" autocomplete="off">
+        <button id="generate">Generate</button>
+    </fieldset>
+    <hr>
+    <p class="sub-title">Your password</p>
+    <fieldset>
+        <input type="text" name="Output" id="output" readonly>
+        <button id="copy">Copy to clipboard</button>
+    </fieldset>
+</div>
 </body>
 </html>
