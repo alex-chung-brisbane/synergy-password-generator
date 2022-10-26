@@ -7,4 +7,4 @@ I recommend reading [my blog post](https://chung.digital/blog/2022/04/05/you-are
 
 ## Usage
 
-> You can access the project hosted [on my website here (proof of concept version)](https://chung.digital/synergy)
+> You can access the project hosted [on my website here](https://chung.digital/synergy)
